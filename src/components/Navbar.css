@@ -1,0 +1,111 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:wght@100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* Navbar Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+  }
+  
+  /* Navbar */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.1);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    transition: all 0.3s ease;
+    box-shadow: 0px 10px 30px rgba(255, 255, 255, 0.1);
+  }
+  
+  .navbar .logo img {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+  }
+  
+  .navbar .cta-button {
+    background-color: #0f0f0f;
+    color: white;
+    border: none;
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 25px;
+  }
+  
+  .navbar .cta-button:hover {
+    background-color: #3a3637;
+  }
+  
+  .navbar .burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 25px;
+  }
+  
+  .navbar .burger div {
+    width: 30px;
+    height: 5px;
+    background-color: white;
+    border-radius: 5px;
+  }
+  
+  .navbar .nav-links {
+    display: flex;
+    list-style-type: none;
+  }
+  
+  .navbar .nav-links li {
+    margin-left: 30px;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .navbar .nav-links li a:hover {
+    color: #ff7eb3;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 768px) {
+
+/*
+    .navbar .nav-links {
+      display: none;
+      flex-direction: column;
+      width: 100%;
+      background-color: rgba(0, 0, 0, 0.9);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      padding: 10px 0;
+      align-items: center;
+    }
+  
+    .navbar.active .nav-links {
+      display: flex;
+    }
+  
+    .navbar .nav-links li {
+      margin: 10px 0;
+    }
+  
+    .navbar .burger {
+      display: flex;
+    }*/
+  }

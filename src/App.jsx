@@ -3,6 +3,9 @@ import ChatbotIcon from './components/ChatbotIcon'
 import ChatForm from './components/ChatForm'
 import ChatMessage from './components/ChatMessage';
 import { companyInfo } from '../CompanyInfo';
+import Home from './components/Home'
+import Navbar from './components/Navbar'
+
 
 const App = () => {
   const [chatHistory, setChatHistory] = useState([
@@ -50,12 +53,15 @@ const App = () => {
 
 
   return (
+   
     <div className={`container ${showChatbot ? "show-chatbot" : ""}`}>
+      <Navbar />
+      <Home />
+
       <button onClick={() => setShowChatbot(prev => !prev)} id ="chatbot-toggle">
         <span className="material-symbols-rounded">mode_comment</span>
         <span className="material-symbols-rounded">close</span>
       </button>
-
       <div className='chatbot-popup'>
         <div className='chat-header'>
           <div className="header-info">
@@ -66,7 +72,6 @@ const App = () => {
             keyboard_arrow_down
           </button>
         </div>
-
         <div ref={chatBodyRef} className="chat-body">
           <div className="message bot-message">
             <ChatbotIcon />
