@@ -133,7 +133,7 @@ body {
 }
 
 .chat-body .message.error .message-text {
-  color: #1b1a1a;
+  color: #f60b0b;
 }
 
 .chat-body .bot-message svg {
@@ -196,6 +196,7 @@ body {
   outline: none;
   width: 100%;
   background: none;
+  color: #fff;
   height: 47px;
   padding: 0 17px;
   font-size: 0.9rem;
