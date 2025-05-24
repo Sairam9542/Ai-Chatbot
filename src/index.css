@@ -7,11 +7,6 @@
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
 }
-body {
-  width: 100%;
-  min-height: 100vh;
-  background: linear-gradient(135deg, #6e8efb, #a777e3);
-}
 
 #chatbot-toggle {
   position: fixed;

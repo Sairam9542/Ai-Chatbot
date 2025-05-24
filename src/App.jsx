@@ -4,7 +4,6 @@ import ChatForm from './components/ChatForm'
 import ChatMessage from './components/ChatMessage';
 import { companyInfo } from '../CompanyInfo';
 import Home from './components/Home'
-import Navbar from './components/Navbar'
 
 
 const App = () => {
@@ -55,7 +54,6 @@ const App = () => {
   return (
    
     <div className={`container ${showChatbot ? "show-chatbot" : ""}`}>
-      <Navbar />
       <Home />
 
       <button onClick={() => setShowChatbot(prev => !prev)} id ="chatbot-toggle">
